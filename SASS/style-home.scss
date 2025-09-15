@@ -1,8 +1,133 @@
+/****** GENERAL ******/
+
+$grey-light:#F6F6F6;
+$grey-medium:#EAEAEA;
+$grey-strong:#353535;
+$black:#000000;
+$white:#FFFFFF;
+$violet:#9356DC;
+$button-bg: linear-gradient(#FF79DA, #9356DC);
+
+* {
+    margin: 0rem;
+    font-family: "Roboto";
+    font-size: 19px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+h1 {
+    color: $black;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    max-width: 270px;
+}
+
+h2 {
+    align-self: flex-start;
+    color: $black;
+    text-align: start;
+    font-size: 26px;
+    font-weight: 700;
+    max-width: fit-content;
+}
+
+/****** HEADER ******/
+
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     & img {
-        width: 40%;
+        padding: 1rem 0rem;
+        width: 162px;
+    }
+    .localisation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 2;
+        background: $grey-medium;
+        color: $grey-strong;
+        box-shadow: #00000030 0px -3px 5px,#00000030 0px 5px 5px;
+        padding: 1rem 0rem;
+        & i {
+            padding-right: 0.5rem;
+        }
+    }
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $grey-light;
+    padding: 2.5rem 2rem;
+    & p {
+        text-align: center;
+        padding: 1rem 0rem;
+        color: $grey-strong;
+    }
+    .exploration-button {
+        width: 220px;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10rem;
+        box-shadow: #00000050 1px 3px 10px;
+        background: $button-bg;
+        color: $white;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+}
+
+.functioning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 2rem;
+}
+
+/****** FOOTER ******/
+
+
+
+/****** Tablette & Desktop VIEW ******/
+
+@media screen and (min-width:480px) {
+
+    h1 {
+        font-size: 40px;
+        min-width: fit-content;
+    }
+
+    h2 {
+        max-width: 100%;
+    }
+
+    header {
+        & img {
+            padding: 1.75rem 0rem;
+            width: 200px;
+        }
+        .localisation {
+            box-shadow: none;
+        }
+    }
+    .functioning {
+
     }
 }

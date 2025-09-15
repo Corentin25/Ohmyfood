@@ -1,8 +1,113 @@
+/****** GENERAL ******/
+* {
+  margin: 0rem;
+  font-family: "Roboto";
+  font-size: 19px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+h1 {
+  color: #000000;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  max-width: 270px;
+}
+
+h2 {
+  align-self: flex-start;
+  color: #000000;
+  text-align: start;
+  font-size: 26px;
+  font-weight: 700;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+/****** HEADER ******/
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 header img {
-  width: 40%;
+  padding: 1rem 0rem;
+  width: 162px;
+}
+header .localisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  background: #EAEAEA;
+  color: #353535;
+  box-shadow: rgba(0, 0, 0, 0.1882352941) 0px -3px 5px, rgba(0, 0, 0, 0.1882352941) 0px 5px 5px;
+  padding: 1rem 0rem;
+}
+header .localisation i {
+  padding-right: 0.5rem;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F6F6F6;
+  padding: 2.5rem 2rem;
+}
+.reservation p {
+  text-align: center;
+  padding: 1rem 0rem;
+  color: #353535;
+}
+.reservation .exploration-button {
+  width: 220px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.3137254902) 1px 3px 10px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #FFFFFF;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 2rem;
+}
+
+/****** FOOTER ******/
+/****** Tablette & Desktop VIEW ******/
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 40px;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+  h2 {
+    max-width: 100%;
+  }
+  header img {
+    padding: 1.75rem 0rem;
+    width: 200px;
+  }
+  header .localisation {
+    box-shadow: none;
+  }
 }/*# sourceMappingURL=style-home.css.map */

@@ -17,7 +17,7 @@ $button-bg: linear-gradient(#FF79DA, #9356DC);
 body {
     display: flex;
     flex-direction: column;
-    min-width: 320px;
+    min-width: 400px;
     max-width: 1440px;
     margin: auto;
 }
@@ -36,7 +36,9 @@ h2 {
     text-align: start;
     font-size: 26px;
     font-weight: 700;
-    max-width: fit-content;
+    padding: 2rem 0.5rem 0.5rem 1rem;
+    margin: auto;
+    max-width: 400px;
 }
 
 /****** HEADER ******/
@@ -93,12 +95,51 @@ header {
     }
 }
 
-.functioning {
+.three-options {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 2.5rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.one-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 400px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.number-option {
+    font-size: 16px;
+    color: $white;
+    background-color: $violet;
+    border-radius: 10rem;
+    z-index: 2;
+    padding: 3px 9px;
+    margin-right: -0.8rem;
+}
+
+.button-option {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 75px;
+    background-color: $grey-light;
+    border-radius: 20px;
+    box-shadow: #00000050 1px 3px 10px;
+    padding-left: 2rem;
+    font-weight: 500;
+    & i {
+        color: #7E7E7E;
+        padding-right: 1.3rem;
+        font-size: 22px;
+    }
+    .fa-store {
+        color: $violet;
+    }
 }
 
 /****** FOOTER ******/
@@ -107,15 +148,16 @@ header {
 
 /****** Tablette & Desktop VIEW ******/
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:1200px) {
 
     h1 {
         font-size: 40px;
-        min-width: fit-content;
+        max-width: 100%;
     }
 
     h2 {
-        max-width: 100%;
+        max-width: 1200px;
+        padding-left: 0rem;
     }
 
     header {
@@ -127,7 +169,15 @@ header {
             box-shadow: none;
         }
     }
-    .functioning {
 
+    .three-options {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .one-option {
+        padding: 1rem;
     }
 }

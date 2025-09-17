@@ -32,17 +32,6 @@ h2 {
   max-width: 400px;
 }
 
-h3 {
-  color: #000000;
-  text-align: start;
-  font-size: 19px;
-  font-weight: 300;
-}
-h3 span {
-  font-size: 20px;
-  font-weight: 700;
-}
-
 /****** HEADER ******/
 header {
   display: flex;
@@ -91,11 +80,17 @@ header .localisation i {
   text-align: center;
   text-decoration: none;
   border-radius: 10rem;
-  box-shadow: rgba(0, 0, 0, 0.3137254902) 1px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.2509803922) 1px 3px 10px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: #FFFFFF;
   margin-top: 1rem;
   padding: 1rem;
+  transition: 0.2s ease-out;
+}
+.reservation .exploration-button:active {
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.3137254902) 2px 5px 5px;
+  transition: 0.2s ease-in-out;
 }
 
 /****** Fonctionnement ******/
@@ -117,13 +112,17 @@ header .localisation i {
 }
 
 .number-option {
-  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 10rem;
+  font-size: 14px;
   color: #FFFFFF;
   background-color: #9356DC;
-  border-radius: 10rem;
   z-index: 2;
-  padding: 3px 9px;
-  margin-right: -0.8rem;
+  margin-right: -0.65rem;
 }
 
 .button-option {
@@ -159,12 +158,14 @@ header .localisation i {
   align-items: center;
 }
 
-.link-card {
+.card {
   width: 90%;
   max-width: 400px;
-  text-decoration: none;
   color: #000000;
   margin-top: 1rem;
+}
+.card a {
+  text-decoration: none;
 }
 
 .photo-card-1 {
@@ -172,7 +173,7 @@ header .localisation i {
   justify-content: end;
   align-items: flex-start;
   width: 100%;
-  height: 200px;
+  height: 190px;
   border-radius: 1rem 1rem 0rem 0rem;
   background-size: cover;
   background-position: center;
@@ -185,7 +186,7 @@ header .localisation i {
   justify-content: end;
   align-items: flex-start;
   width: 100%;
-  height: 200px;
+  height: 190px;
   border-radius: 1rem 1rem 0rem 0rem;
   background-size: cover;
   background-position: center;
@@ -198,7 +199,7 @@ header .localisation i {
   justify-content: end;
   align-items: flex-start;
   width: 100%;
-  height: 200px;
+  height: 190px;
   border-radius: 1rem 1rem 0rem 0rem;
   background-size: cover;
   background-position: center;
@@ -211,7 +212,7 @@ header .localisation i {
   justify-content: end;
   align-items: flex-start;
   width: 100%;
-  height: 200px;
+  height: 190px;
   border-radius: 1rem 1rem 0rem 0rem;
   background-size: cover;
   background-position: center;
@@ -239,11 +240,37 @@ header .localisation i {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  padding: 1rem;
 }
-.text-card .fa-heart {
-  font-size: 22px;
+.text-card a {
+  width: 100%;
+  color: #000000;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 300;
+  box-sizing: border-box;
+  padding: 1rem 0rem 1rem 1rem;
+  background-color: #FFFFFF;
+}
+.text-card a span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.text-card .favorite {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: -1rem;
+  margin: 1rem 0rem 0rem -2rem;
+  background-image: url(/Images/heart-empty.png);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.text-card .favorite:hover {
+  opacity: 1;
+  background-image: url(/Images/heart-full.png);
 }
 
 /****** FOOTER ******/
@@ -289,6 +316,14 @@ footer .logo-footer {
   header .localisation {
     box-shadow: none;
   }
+  .reservation .exploration-button {
+    transition: 0.2s ease-out;
+  }
+  .reservation .exploration-button:hover {
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.3137254902) 2px 5px 5px;
+    transition: 0.2s ease-in-out;
+  }
   .three-options {
     display: flex;
     flex-direction: row;
@@ -303,8 +338,8 @@ footer .logo-footer {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .link-card {
-    max-width: 600px;
+  .card {
+    max-width: 550px;
   }
   footer {
     flex-direction: row-reverse;

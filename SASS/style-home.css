@@ -87,7 +87,7 @@ header .localisation i {
   padding: 1rem;
   transition: 0.2s ease-out;
 }
-.reservation .exploration-button:active {
+.reservation .exploration-button:hover {
   opacity: 0.8;
   box-shadow: rgba(0, 0, 0, 0.3137254902) 2px 5px 5px;
   transition: 0.2s ease-in-out;
@@ -315,14 +315,6 @@ footer .logo-footer {
   }
   header .localisation {
     box-shadow: none;
-  }
-  .reservation .exploration-button {
-    transition: 0.2s ease-out;
-  }
-  .reservation .exploration-button:hover {
-    opacity: 0.8;
-    box-shadow: rgba(0, 0, 0, 0.3137254902) 2px 5px 5px;
-    transition: 0.2s ease-in-out;
   }
   .three-options {
     display: flex;

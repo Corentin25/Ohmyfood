@@ -171,6 +171,7 @@ header {
     background-color: $white;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
     .meal-name {
         display: flex;
         flex-direction: column;
@@ -224,7 +225,7 @@ header {
     margin: 2.5rem 0rem 1.5rem 0rem;
     padding: 1rem;
     transition: 0.2s ease-out;
-    &:active {
+    &:hover {
         opacity: 0.8;
         box-shadow: #00000050 2px 5px 5px;
         transition: 0.2s ease-in-out;
@@ -302,15 +303,6 @@ footer {
 
     .meal-button {
         width: 630px;
-    }
-
-    .command-button {
-        transition: 0.2s ease-out;
-        &:hover {
-            opacity: 0.8;
-            box-shadow: #00000050 2px 5px 5px;
-            transition: 0.2s ease-in-out;
-        }
     }
 
     footer {

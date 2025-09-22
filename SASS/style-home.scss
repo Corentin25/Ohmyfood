@@ -111,15 +111,13 @@ header {
         margin-top: 1rem;
         padding: 1rem;
         transition: 0.2s ease-out;
-        &:active {
+        &:hover {
             opacity: 0.8;
             box-shadow: #00000050 2px 5px 5px;
             transition: 0.2s ease-in-out;
         }
     }
 }
-
-
 
 /****** Fonctionnement ******/
 
@@ -321,17 +319,6 @@ footer {
         }
         .localisation {
             box-shadow: none;
-        }
-    }
-
-    .reservation {
-        .exploration-button {
-            transition: 0.2s ease-out;
-            &:hover {
-                opacity: 0.8;
-                box-shadow: #00000050 2px 5px 5px;
-                transition: 0.2s ease-in-out;
-            }
         }
     }
 

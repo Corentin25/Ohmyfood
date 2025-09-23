@@ -6,6 +6,7 @@ $grey-strong:#353535;
 $black:#000000;
 $white:#FFFFFF;
 $violet:#9356DC;
+$pink:#FF79DA;
 $green-water-light:#99E2D0;
 $green-water-strong:#008766;
 $button-bg: linear-gradient(#FF79DA, #9356DC);
@@ -55,6 +56,71 @@ h2 {
     max-width: 400px;
 }
 
+/****** ANIMATION START ******/
+
+.full-screen-loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: loader-timming 0.5s ease-in-out forwards 3.1s;
+}
+
+@keyframes loader-timming {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.logo-loader {
+    width: 90%;
+    position: absolute;
+    z-index: 2;
+    object-fit: cover;
+}
+
+.loader {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 1;
+    width: 88%;
+    background-color: $black;
+}
+
+.loader-bar {
+    height: 200px;
+    background: linear-gradient(0.25turn,$violet, $pink);
+    animation: loader-animation 3s ease-in-out forwards;
+}
+
+@keyframes loader-animation {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width:25%;
+    }
+    90% {
+        width: 55%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 /****** HEADER ******/
 
 header {
@@ -66,22 +132,23 @@ header {
         padding: 1rem 0rem;
         width: 162px;
     }
-    .localisation {
+}
+
+.localisation {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 100%;
-        z-index: 2;
         background: $grey-medium;
         color: $grey-strong;
-        box-shadow: #00000030 0px -3px 5px,#00000030 0px 5px 5px;
+        box-shadow: 0px 3px 12px #00000060;
+        margin-bottom: 0.5rem;
         padding: 1rem 0rem;
         & i {
             padding-right: 0.5rem;
         }
     }
-}
 
 /****** BODY ******/
 
@@ -144,11 +211,11 @@ header {
     align-items: center;
     width: 25px;
     height: 25px;
+    z-index: 1;
     border-radius: 10rem;
     font-size: 14px;
     color: $white;
     background-color: $violet;
-    z-index: 2;
     margin-right: -0.65rem;
 }
 
@@ -312,14 +379,24 @@ footer {
         padding-left: 0rem;
     }
 
+    .logo-loader {
+        width: 40%;
+    }
+
+    .loader {
+        width: 38%;
+    }
+
     header {
         & img {
             padding: 1.75rem 0rem;
             width: 200px;
         }
-        .localisation {
-            box-shadow: none;
-        }
+    }
+
+    .localisation {
+        box-shadow: none;
+        margin-bottom: 0rem;
     }
 
     .three-options {

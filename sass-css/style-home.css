@@ -242,7 +242,7 @@ header img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../Images/Menu-la-palette-du-gout.jpg);
+  background-image: url(../image/menu-la-palette-du-gout.jpg);
 }
 
 .photo-card-2 {
@@ -255,7 +255,7 @@ header img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../Images/Menu-la-note-enchantee.jpg);
+  background-image: url(../image/menu-la-note-enchantee.jpg);
 }
 
 .photo-card-3 {
@@ -268,7 +268,7 @@ header img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../Images/Menu-a-la-francaise.jpg);
+  background-image: url(../image/menu-a-la-francaise.jpg);
 }
 
 .photo-card-4 {
@@ -281,7 +281,7 @@ header img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../Images/Menu-le-delice-des-sens.jpg);
+  background-image: url(../image/menu-le-delice-des-sens.jpg);
 }
 
 .new {
@@ -325,7 +325,7 @@ header img {
   position: relative;
   left: -1rem;
   margin: 1rem 0rem 0rem -2rem;
-  background-image: url(/Images/heart-empty.png);
+  background-image: url(../image/heart-empty.png);
   background-position: center;
   background-size: cover;
   opacity: 0.8;
@@ -334,7 +334,7 @@ header img {
 }
 .text-card .favorite:hover {
   opacity: 1;
-  background-image: url(/Images/heart-full.png);
+  background-image: url(../image/heart-full.png);
 }
 
 /****** FOOTER ******/

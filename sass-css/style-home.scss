@@ -265,22 +265,22 @@ header {
 
 .photo-card-1 {
     @include photo-menu;
-    background-image: url(../Images/Menu-la-palette-du-gout.jpg);
+    background-image: url(../image/menu-la-palette-du-gout.jpg);
 }
 
 .photo-card-2 {
     @include photo-menu;
-    background-image: url(../Images/Menu-la-note-enchantee.jpg);
+    background-image: url(../image/menu-la-note-enchantee.jpg);
 }
 
 .photo-card-3 {
     @include photo-menu;
-    background-image: url(../Images/Menu-a-la-francaise.jpg);
+    background-image: url(../image/menu-a-la-francaise.jpg);
 }
 
 .photo-card-4 {
     @include photo-menu;
-    background-image: url(../Images/Menu-le-delice-des-sens.jpg);
+    background-image: url(../image/menu-le-delice-des-sens.jpg);
 }
 
 .new {
@@ -323,7 +323,7 @@ header {
         position: relative;
         left: -1rem;
         margin: 1rem 0rem 0rem -2rem;
-        background-image: url(/Images/heart-empty.png);
+        background-image: url(../image/heart-empty.png);
         background-position: center;
         background-size: cover;
         opacity: 0.8;
@@ -331,7 +331,7 @@ header {
         transition: all 0.2s ease-in-out;
         &:hover {
             opacity: 1;
-            background-image: url(/Images/heart-full.png);
+            background-image: url(../image/heart-full.png);
         }
     }
 }

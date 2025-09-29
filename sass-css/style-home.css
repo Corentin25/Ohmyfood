@@ -363,7 +363,7 @@ footer .logo-footer {
   text-decoration: none;
 }
 
-/****** Tablette & Desktop VIEW ******/
+/****** Desktop VIEW ******/
 @media screen and (min-width: 1220px) {
   h1 {
     font-size: 40px;

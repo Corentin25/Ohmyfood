@@ -263,7 +263,7 @@ footer .logo-footer {
   text-decoration: none;
 }
 
-/****** Tablette & Desktop VIEW ******/
+/****** Desktop VIEW ******/
 @media screen and (min-width: 1220px) {
   header img {
     padding: 1.75rem 0rem;

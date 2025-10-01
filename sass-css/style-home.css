@@ -307,13 +307,15 @@ header img {
 }
 .text-card a {
   width: 100%;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+.text-card a h3 {
   color: #000000;
   text-align: start;
   font-size: 18px;
   font-weight: 300;
-  box-sizing: border-box;
   padding: 1rem 0rem 1rem 1rem;
-  background-color: #FFFFFF;
 }
 .text-card a span {
   font-size: 20px;
